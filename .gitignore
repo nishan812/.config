@@ -1,7 +1,7 @@
 Thunar
-cava
 font-manager
 fontconfig
+dconf
 go
 gtk-3.0
 htop
