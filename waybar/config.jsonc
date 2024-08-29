@@ -1,0 +1,107 @@
+{
+"layer":"top",
+    "height": 30, // Waybar height (to be removed for auto height)
+    "spacing": 0, // Gaps between modules (4px)
+    "modules-left": [
+        "hyprland/workspaces",
+	"cpu",
+	"memory"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+
+        "backlight",
+	"wireplumber",
+        "battery",
+        "network",
+        "custom/power"
+    ],
+
+     "hyprland/workspaces": {
+    "all-outputs": true
+    },
+
+    "clock": {
+	"format":"{:%I : %M %p  %a}",
+        "format-alt": "{:%C %B, %Y, %A}",
+	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    }
+    },
+
+
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": true,
+	"interval":2
+    },
+
+
+    "memory": {
+        "format": "  {}%",
+	"interval":4
+    },
+
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+	 "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "   {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    
+
+
+    "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "on-click": "helvum",
+    "format-icons": ["", "", ""]
+},
+
+
+    "custom/power": {
+        "format" : "⏻",
+	"tooltip-format":"⏻  Power",
+	"on-click":"wlogout"
+}
+
+}
