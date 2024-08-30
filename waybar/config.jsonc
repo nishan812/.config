@@ -5,7 +5,8 @@
     "modules-left": [
         "hyprland/workspaces",
 	"cpu",
-	"memory"
+	"memory",
+	"cava"
     ],
     "modules-center": [
         "clock"
@@ -102,6 +103,8 @@
         "format" : "⏻",
 	"tooltip-format":"⏻  Power",
 	"on-click":"wlogout"
-}
-
+},
+"cava": {
+     "cava_config": "~/.config/cava/config"
+ }
 }

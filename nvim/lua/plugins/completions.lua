@@ -10,12 +10,15 @@ return {
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
+			"onsails/lspkind-nvim"
 		},
 
 		config = function()
 			-- Set up nvim-cmp.
 			local cmp = require("cmp")
 			local lspkind = require("lspkind")
+
+			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
 				snippet = {

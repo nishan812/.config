@@ -13,7 +13,6 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
 
-
 			--JavaSkript
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
@@ -34,6 +33,21 @@ return {
 						},
 					},
 				},
+			})
+
+			--css
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+
+			--tailwind
+			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+
+			--html
+			lspconfig.html.setup({
+				capabilities = capabilities,
 			})
 		end,
 	},
