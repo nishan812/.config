@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left toggle<CR>")
+vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right toggle<CR>")
 vim.keymap.set("n", "<leader>e", ":Neotree focus<CR>")
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
 vim.keymap.set("n","<leader>fs",":Telescope live_grep<CR>")

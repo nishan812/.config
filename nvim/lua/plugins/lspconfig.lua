@@ -13,8 +13,18 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
 
+			--Bash
+			lspconfig.bashls.setup({
+				capabilities = capabilities,
+			})
+
 			--JavaSkript
 			lspconfig.tsserver.setup({
+				capabilities = capabilities,
+			})
+
+			--JSON
+			lspconfig.jsonls.setup({
 				capabilities = capabilities,
 			})
 
