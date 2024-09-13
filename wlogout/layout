@@ -2,7 +2,7 @@
 
 {
     "label" : "shutdown",
-    "action" : "systemctl shutdown",
+    "action" : "shutdown now",
     "text" : "shutdown",
     "keybind" : "s"
 }
