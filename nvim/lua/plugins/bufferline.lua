@@ -1,13 +1,12 @@
 return {
 
-	"akinsho/bufferline.nvim",
+  "akinsho/bufferline.nvim",
 
-	config = function()
-		require("bufferline").setup({
-			options = {
-				themable = true,
-			}
-		})
-
-	end,
+  config = function()
+    require("bufferline").setup({
+      options = {
+        themable = true,
+      }
+    })
+  end,
 }
