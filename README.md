@@ -1,7 +1,13 @@
 # 🧠 My Personal Dotfiles – Arch Linux + Hyprland
 
+> [!IMPORTANT]
+> **This repository is no longer maintained.** I have switched to NixOS and these dotfiles are archived for reference only. Things may be outdated or broken. Feel free to browse for inspiration, but don't expect updates or support.
+>
+> [Click here to checkout my NixOS configs](https://github.com/niii-san/nixos-config)
+
 Minimalistic dotfiles for my Arch Linux setup, Hyprland as the window manager.
 This configuration is designed to be lightweight, fast, and easy to use, with a focus on minimalism.
+
 ---
 
 # Preview
@@ -13,9 +19,8 @@ This configuration is designed to be lightweight, fast, and easy to use, with a 
 
 To install my dotfiles and get started instantly, run:
 
-```bash
-source <(curl -s https://www.nishanbista.com/dotfiles.sh)
-```
+> *_REMOVED_*
+ 
 
 ### What happens running this command?
 - Clones my dotfiles into your home directory.
@@ -24,10 +29,8 @@ source <(curl -s https://www.nishanbista.com/dotfiles.sh)
 
 
 > [!WARNING]
->  You should not copy/paste any commands without knowing what it does specially with `source < ("")`. Although this script is safe. First make sure you check the script :)`
->    ```bash
->    curl -s https://www.nishanbista.com/dotfiles.sh | cat 
-> ```
+>  You should not copy/paste any commands without knowing what it does specially with `source < ("")`. Although this script is safe. First make sure you check the script :) <br>
+> *_REMOVED_*
 
 
 # Packages
